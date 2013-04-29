@@ -57,7 +57,7 @@ Namespaces
 ----------
 Events require names (the 'foo' bit in the examples above). However, these can be broken into dot-separated parts - so, you can do `<<event foo.bar>>` for example.
 
-This way, you can register multiple listeners with different orders of specificity. A listener registered to *'foo'* will get any events that start with *"foo"*, including *"foo.bar"*, whereas a listener matching *'foo.bar.baz'* will only be called against events for *"foo.bar"*. Feel free to email me if that doesn't makes sense, but trust me, it's useful.
+This way, you can register multiple listeners with different orders of specificity. A listener registered to *'foo'* will get any events that start with *"foo"*, including *"foo.bar"*, whereas a listener matching *'foo.bar'* will only ever be called against events for *"foo.bar"*. Feel free to email me if that doesn't makes sense, but trust me, it's useful.
 
 
 
