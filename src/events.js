@@ -75,8 +75,8 @@ try {
 		init: function(){},
 		handler: function(el, name, params) {
 			var fn = params.shift();
-			if (fn === "on" && typeof params[1] === 'function') {
-				Events.on(params[0], params[1]);
+			if (fn === "on" && typeof state.history[0].variables[params[1]] === "function") {
+				Events.on(params[0], state.history[0].variables[params[1]]);
 			} else if (fn === "trigger") {
 				Events.trigger(params.shift(), params, el);
 			} else {
