@@ -14,7 +14,7 @@ Check out the example `example/simple_events.twee` file to see how this can be u
 ***In Twine***
 
 * To trigger a 'foo' event, use:
-	`<<event triger foo>>`
+	`<<event trigger foo>>`
 
 	or as a convenience method:
 
@@ -36,7 +36,7 @@ Check out the example `example/simple_events.twee` file to see how this can be u
 * To trigger events, call:
 	 `Events.trigger('foo', ["val1", "val2"]);`
 * To register a listener, use:
-	`Events.on('foo', function(e){ alert(e,data[0]); });`
+	`Events.on('foo', function(e){ alert(e.data[0]); });`
 
 
 Events
